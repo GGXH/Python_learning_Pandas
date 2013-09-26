@@ -78,3 +78,19 @@ Sorted = df.sort(['Births'], ascending=0)
 print Sorted.head(1)
 
 print df['Births'].max()
+
+df['Births'].plot()
+
+MaxValue = df['Births'].max()
+
+MaxName = df[df['Births']==df['Births'].max()].index[0]
+
+Text = str(MaxValue) + " - " + MaxName
+
+plt.annotate(Text, xy=(1,MaxValue), xytext=(8,0), xycoords=('axes fraction','data'), textcoords='offset points')
+
+print "The most popular name"
+
+print df[df['Births'] == df['Births'].max()]
+
+plt.show()
