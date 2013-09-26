@@ -26,3 +26,7 @@ print random_names[:10]
 births = [random.randint(low=0,high=1000) for i in range(1000)]
 
 print births[:10]
+
+BabyDataSet = zip(random_names,births)
+
+print BabyDataSet[:10]
