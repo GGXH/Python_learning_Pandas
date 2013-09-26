@@ -73,3 +73,8 @@ Name = df.groupby(df['Names'])
 df = Name.sum()
 
 print df
+
+Sorted = df.sort(['Births'], ascending=0)
+print Sorted.head(1)
+
+print df['Births'].max()
