@@ -17,6 +17,8 @@ df = DataFrame(data = BabyDataSet, columns = ['Names','Births'])
 
 df
 
+##---class 2
+
 random.seed(500)
 
 random_names = [names[random.randint(low=0,high=len(names))] for i in range(1000)]
@@ -30,3 +32,7 @@ print births[:10]
 BabyDataSet = zip(random_names,births)
 
 print BabyDataSet[:10]
+
+df = DataFrame(data=BabyDataSet, columns = ["Names","Births"])
+
+print df[:10]
