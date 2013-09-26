@@ -38,3 +38,9 @@ df = DataFrame(data=BabyDataSet, columns = ["Names","Births"])
 print df[:10]
 
 df.to_csv('births1880.txt',index=False,header=False)
+
+Location = r'births1880.txt'
+
+df = read_csv(Location)
+
+print df
