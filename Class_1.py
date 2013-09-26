@@ -44,3 +44,19 @@ Location = r'births1880.txt'
 df = read_csv(Location)
 
 print df
+
+print df.head()
+
+df = read_csv(Location,header=None)
+
+print df
+
+print df.tail()
+
+df = read_csv(Location, names = ['Names','Births'])
+
+print df.head()
+
+import os
+
+os.remove(Location)
