@@ -60,3 +60,16 @@ print df.head()
 import os
 
 os.remove(Location)
+
+print df['Names'].unique()
+
+for x in df['Names'].unique():
+    print x
+
+print df['Names'].describe()
+
+Name = df.groupby(df['Names'])
+
+df = Name.sum()
+
+print df
