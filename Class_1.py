@@ -1,4 +1,5 @@
 from pandas import DataFrame, read_csv
+from numpy import random
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -15,3 +16,9 @@ print BabyDataSet
 df = DataFrame(data = BabyDataSet, columns = ['Names','Births'])
 
 df
+
+random.seed(500)
+
+random_names = [names[random.randint(low=0,high=len(names))] for i in range(1000)]
+
+print random_names[:10]
