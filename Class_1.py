@@ -107,3 +107,12 @@ print df
 df.to_excel('Lesson3.xlsx', index=False)
 print 'Done'
 
+#Location = r"/home/guagong/Learning/Python_learning/Pandas/Lesson3.xlsx"
+
+#xlsx = pd.ExcelFile(Location)
+
+#df = xlsx.parse('sheet1',index_col='StatusDate')
+print df.dtypes
+
+print df.index
+
