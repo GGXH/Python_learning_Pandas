@@ -3,6 +3,9 @@ from numpy import random
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
+
+import Functions
 
 print 'Pandas version ' + pd.__version__
 
@@ -94,3 +97,13 @@ print "The most popular name"
 print df[df['Births'] == df['Births'].max()]
 
 plt.show()
+
+##--Class 3
+
+dataset = Functions.CreatDataSet(4)
+df = DataFrame(data=dataset, columns=['State','Status','CustomerCount','StatusDate'])
+print df
+
+df.to_excel('Lesson3.xlsx', index=False)
+print 'Done'
+
